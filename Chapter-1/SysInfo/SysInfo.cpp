@@ -24,10 +24,6 @@ int main()
 	TCHAR DirectoryBuffer[MAX_PATH + 1];
 	UINT DirSize = sizeof(DirectoryBuffer) / sizeof(DirectoryBuffer[0]);
 	UINT ret = ::GetWindowsDirectoryW(DirectoryBuffer, DirSize);
-	if (0 == ret)
-	{
-		return 1;
-	}
 	printf("GetWindowsDirectory:\n");
 	printf("Directory: %ws\n", DirectoryBuffer);
 
