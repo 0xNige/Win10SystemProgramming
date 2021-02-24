@@ -6,5 +6,5 @@ There is notes on each chapter, where I've wrote whatever I thought worthy at th
 
 # Table of Contents
 
-- [Chapter 1](Chapter-1/README.md) - Foundations
-- [Chapter 2](Chapter-2/README.md) - Objects and Handles
+- [Chapter 1](Chapter-1/) - Foundations
+- [Chapter 2](Chapter-2/) - Objects and Handles
