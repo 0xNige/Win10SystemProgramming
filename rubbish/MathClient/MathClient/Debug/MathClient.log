@@ -1,0 +1,3 @@
+﻿  MathClient.cpp
+MathClient.obj : error LNK2019: unresolved external symbol __imp__returns4 referenced in function _main
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathClient\Debug\MathClient.exe : fatal error LNK1120: 1 unresolved externals

@@ -1,0 +1,16 @@
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\x64\Release\MathLibrary\MathLibrary.pri
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\priconfig.xml
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\priconfig.xml.intermediate
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\unfiltered.layout.resfiles
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\unfiltered.layout.resfiles.intermediate
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\filtered.layout.resfiles
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\filtered.layout.resfiles.intermediate
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\excluded.layout.resfiles
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\excluded.layout.resfiles.intermediate
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\resources.resfiles
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\resources.resfiles.intermediate
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\pri.resfiles
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\pri.resfiles.intermediate
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\qualifiers.txt
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\qualifiers.txt.intermediate
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\x64\Release\MultipleQualifiersPerDimensionFound.txt

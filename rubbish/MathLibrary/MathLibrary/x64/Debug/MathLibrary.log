@@ -1,0 +1,6 @@
+﻿  dllmain.cpp
+  MathLibrary.cpp
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\MathLibrary.cpp(4,1): warning C4273: 'returns4': inconsistent dll linkage
+C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\MathLibrary\MathLibrary.h(12,32): message : see previous definition of 'returns4' (compiling source file MathLibrary.cpp)
+     Creating library C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\x64\Debug\MathLibrary\MathLibrary.lib and object C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\x64\Debug\MathLibrary\MathLibrary.exp
+  MathLibrary.vcxproj -> C:\Users\nige\Documents\Visual Studio 2019\Projects\c_c++\Win10SystemProgramming\rubbish\MathLibrary\x64\Debug\MathLibrary\MathLibrary.dll
