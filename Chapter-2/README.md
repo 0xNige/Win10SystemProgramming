@@ -57,11 +57,63 @@ Kernel objects are private to a process and therefore you cant simply pass handl
 
 ### Sharing by name
 
-This is the simplest form of sharing if its available. The cooperating processes would need to call a `Create` function both using the same object name. The first call would create the object, and the second call would open a handle to the object. An example of this would be creating a driver then opening it to use it.
+This is the simplest form of sharing if its available. The cooperating processes would need to call a `Create` function using the same object name. The first call would create the object, and the second call would open a handle to the object. 
+An example of this would be creating a driver then opening it to use it or [BasicSharing](BasicSharing/BasicSharing/BasicSharing.cpp). Excuse the poor code.
 
 ### Sharing by Handle Inheritance
 
 
 
 ### Sharing by Handle Duplication
+
+Handle duplication has no inherent restrictions, except security, and can work on almost nay kernel object at any point in time. However this can end up being rather difficult.
+You use the `DuplicationHandle` function to duplicate a handle, funnily enough.
+It requires a source process, source handle and a target process. If this is successful, a new handle entry is written into the target processes handle table, pointing to the same object as the source handle.
+A typical scenario for this is duplicating one of the callers handles into another process' handle table, but the source and target processes can be the same.
+It is possible to create an object a level of access, and then duplicate the handle with a different level of access. 
+```
+HANDLE h1 = CreateSomeObject(FULL_ACCESS) // obviously not a real function
+HANDLE h2;
+DuplicateHandle(GetCurrentProcess(), h1, GetCurrentProcess(), &h2, READ_ACCESS)
+```
+That should, when written in proper C(++) with proper functions, will get a full access handle, then duplicate it with only read access
+This example is rather simple. It gets complicated when trying to copy a handle into another process. 
+The duplication part is simple, but telling the other process this has happened and how to get the handle is more complicated.
+To do this, we'd need some form of IPC, which im not gonna go into here.
+
+## Private Object Namespaces
+
+Sharing objects by name is great, until some pesky code comes along and tries to access our object using the same name.
+This may be by accident or malicious but either way, it'll either fail or they;ll get a legit handle back to our object.
+I don't need to go into why this is bad.
+We can use private namespaces to sort this. These prevent the full name being revealed.
+Creating a private namespace is a two step process:
+1. Create a helper object called a boundary descriptor.
+   This allows adding certain SIDs that are allows to use the private namespace based on the descriptor 
+2. Create the private 
+
+See [PrivateSharing](PrivateSharing/PrivateSharing.cpp) for a, somewhat shitty, example of this.
+
+
+### Other objects
+
+Kernel objects are the main focus here but there are some other common objects used in windows.
+
+## User objects
+
+- Windows
+- Menus
+- hooks
+
+Handles to these objects share the following attributes
+- No ref counting. If destroyed by anyone, gone.
+- Scoped under a windows station. Windows station contains clipboard, desktops and atom table. This means handles to these objects can be passed freely among all applications sharing a desktop.
+
+## GDI objects
+
+The Graphics Device Interface is the original graphics API used in Windows and is still used today.
+again:
+- no ref counting
+- handles only valid in the process they're created
+- cant be shared between processes
 

@@ -1,8 +1,11 @@
 #include <iostream>
 #include <Windows.h>
-#include <wchar.h>
-#include <stdio.h>
-#include <cstring>
+
+/*
+* This code is ass. 
+* Literally just threw together as an example. 
+* Might fix later, might not.
+*/
 
 int main()
 {
@@ -32,7 +35,7 @@ int main()
                 return 1;
             }
 
-            printf("string: %ws\n", buf); // needs loop
+            printf("string: %ws\n", buf); // lolz
 
             
             UnmapViewOfFile(buf);
@@ -47,7 +50,7 @@ int main()
                 return 1;
             }
 
-            wcscpy_s((PWSTR)buf, 29, L"WriteOperation");
+            wcscpy_s((PWSTR)buf, 29, L"WriteOperation"); // lolz v2
 
             UnmapViewOfFile(buf);
         }
