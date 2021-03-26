@@ -81,7 +81,7 @@ This example is rather simple. It gets complicated when trying to copy a handle 
 The duplication part is simple, but telling the other process this has happened and how to get the handle is more complicated.
 To do this, we'd need some form of IPC, which im not gonna go into here.
 
-## Private Object Namespaces
+### Private Object Namespaces
 
 Sharing objects by name is great, until some pesky code comes along and tries to access our object using the same name.
 This may be by accident or malicious but either way, it'll either fail or they;ll get a legit handle back to our object.
