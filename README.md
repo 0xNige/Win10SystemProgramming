@@ -8,3 +8,4 @@ There is notes on each chapter, where I've wrote whatever I thought worthy at th
 
 - [Chapter 1](Chapter-1/) - Foundations
 - [Chapter 2](Chapter-2/) - Objects and Handles
+- [Chapter 3](Chapter-3/) - Processes
