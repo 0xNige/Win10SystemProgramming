@@ -95,11 +95,11 @@ Creating a private namespace is a two step process:
 See [PrivateSharing](PrivateSharing/PrivateSharing.cpp) for a, somewhat shitty, example of this.
 
 
-### Other objects
+## Other objects
 
 Kernel objects are the main focus here but there are some other common objects used in windows.
 
-## User objects
+### User objects
 
 - Windows
 - Menus
@@ -109,7 +109,7 @@ Handles to these objects share the following attributes
 - No ref counting. If destroyed by anyone, gone.
 - Scoped under a windows station. Windows station contains clipboard, desktops and atom table. This means handles to these objects can be passed freely among all applications sharing a desktop.
 
-## GDI objects
+### GDI objects
 
 The Graphics Device Interface is the original graphics API used in Windows and is still used today.
 again:
